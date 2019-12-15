@@ -1,0 +1,635 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Web Design</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/lg.png" type="image/x-icon"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'><!--font awesome icon link-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'>
+  <link rel="stylesheet" href="css/fakeloader.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style type="text/css">
+ 
+  .navbar {
+    margin-bottom: 0;
+    background-color: black;
+    z-index: 9999;
+    border: 0;
+    font-size: 15px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+
+  }
+  #myNavbar {
+    font-size: 14px;
+    color: 
+    #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+   color: #f6ba18 !important;
+    background-color: !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+ 
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+</style>
+  </head>
+  <body>
+ <div id="fakeloader-overlay" class="visible incoming">
+    <div class="loader-wrapper-outer"><div class="loader-wrapper-inner">
+    <div class="loader"></div></div></div></div>
+   
+<div class="container-fluid"> 
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="img/zz.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#index">HOME</a></li>   
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#Team">TEAM</a></li>
+         <li><a href="#Testimonials">Testimonials</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+<div id="index" class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overla"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>We are creative</h1>        
+            <h3>Get start your next awesome project</h3>
+        </hgroup>
+         <button type="button" class="btn btn-primary btn-lg">GET STARTED <i class="fas fa-long-arrow-alt-right"></i></button>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>We are smart</h1>        
+            <h3>Get start your next awesome project</h3>
+        </hgroup>       
+         <button type="button" class="btn btn-primary btn-lg">GET STARTED <i class="fas fa-long-arrow-alt-right"></i></button>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1>We are amazing</h1>        
+            <h3>Get start your next awesome project</h3>
+        </hgroup>
+         <button type="button" class="btn btn-primary btn-lg">GET STARTED <i class="fas fa-long-arrow-alt-right"></i></button>
+      </div>
+    </div>
+  </div> 
+</div>
+<section id="services" class="we-offer-area text-center bg-gray">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading text-center">
+                        <h2>What we <span>Offer</span></h2>
+                        <h4>Lorem Ipsum is simply dummy text</h4>
+                    </div>
+                </div>
+            </div>
+                <div class="row our-offer-items less-carousel">
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                          <i class="fas fa-laptop-code"></i>
+                            <h4>Web Design $ Development</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                                     <i class="fas fa-pen-fancy"></i>
+                            <h4>Graphics Design</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-tasks"></i>
+                            <h4>Porject Management</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                          <i class="fas fa-mobile"></i>
+                            <h4>Mobile Development</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-recycle"></i>
+                            <h4>Software Update</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-headset"></i>
+                            <h4>24/7 Support</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+        </div>
+    </section>
+     </div>
+
+
+<div id="portfolio" class="container-fluid"> 
+<div class="container-portfilo" style="background: #eee;"> 
+  <p class="sp">We Are Creative</p>
+<div class="container-fluid">
+   <div class="row">
+  <div class="col-sm-4 col-md-4 col-lg-4">
+<div class="container-xoom">
+   <img src="img/h.jpg" alt="Avatar" class="c-image">
+  <div class="overlay">
+    <div class="text">Web Design</div>
+  </div>
+</div>
+  </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="container-xoom">
+ <img src="img/h1.jpg" alt="Avatar" class="c-image">
+  <div class="overlay">
+    <div class="text">Web Design</div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="container-xoom">
+   <img src="img/h2.jpg" alt="Avatar" class="c-image">
+  <div class="overlay">
+    <div class="text">Web Design</div>
+  </div>
+</div>
+    </div>
+
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="container-xoom">
+   <img src="img/h3.jpg" alt="Avatar" class="c-image">
+  <div class="overlay">
+    <div class="text">Web Design</div>
+  </div>
+</div>
+    </div>
+ <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="container-xoom">
+   <img src="img/h4.jpg" alt="Avatar" class="c-image">
+  <div class="overlay">
+    <div class="text">Web Design</div>
+  </div>
+</div>
+    </div>
+     <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="container-xoom">
+   <img src="img/h5.jpg" alt="Avatar" class="c-image">
+  <div class="overlay">
+    <div class="text">Web Design</div>
+  </div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+</div>
+ <div class="container-fluid">        
+<div class="container-sms">
+<div class="container-mss">
+<div class="wrapper">
+<div class="example">
+<a href="https://youtu.be/3DNjVwz9JSY"><i class="fas fa-play"></i></a>
+</div>
+</div>
+<h6>  Watch Our Latest</h6>
+  <p> business also organized efforts</p>
+</div>
+</div>
+</div>
+  <div id="Team" class="container-fluid">
+    <div class="container-bb"> 
+ <p class="sp">Our Team</p>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="team-img">
+                        <img src="img/ceo.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Nazmul Hasan Ronee</h3>
+                        <span class="post">Full Stack Web Developer</span>
+                    </div>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-linkedin-in" style="color:#4064AD"></i> </a></li>
+                        <li><a href=""><i class="fab fa-facebook-f" style="color: #4064AD"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter" style="color: #1C9CEB"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram" style="color: #B23576"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="team-img">
+                    <img src="img/sm.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Salman Dewan</h3>
+                        <span class="post">Front End Developer</span>
+                    </div>
+                    <ul class="social">
+                      <li><a href=""><i class="fab fa-linkedin-in" style="color:#4064AD"></i> </a></li>
+                        <li><a href=""><i class="fab fa-facebook-f" style="color: #4064AD"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter" style="color: #1C9CEB"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram" style="color: #B23576"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="team-img">
+                    <img src="img/sp-01.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Imran Mahmud</h3>
+                        <span class="post">Front End Developer</span>
+                    </div>
+                    <ul class="social">
+                       <li><a href=""><i class="fab fa-linkedin-in" style="color:#4064AD"></i> </a></li>
+                        <li><a href=""><i class="fab fa-facebook-f" style="color: #4064AD"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter" style="color: #1C9CEB"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram" style="color: #B23576"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <div id="about" class="container-fluid ">
+   <div class="row">
+  <div class="col-sm-6 col-md-6 col-lg-6">
+    <div class="container-left">
+     <div class="fb">
+      <img src="img/w.jpg" width="100%" class="xf">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-6 col-lg-6">
+ 
+<div class="container-left ">
+ <h5 class="container-heading">WELCOME TO WEB DESIGN</h5>
+ <p class="container-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, massa ac ornare feugiat, nunc dui auctor ipsum, sed posuere eros sapien id quam.</p>
+<div class="skills">
+   <div class="skill">
+      <div class="skill-title">
+        HTML & CSS
+      </div>
+      <div class="skill-bar" data-bar="80"><span></span></div>
+   </div>
+   <div class="skill">
+      <div class="skill-title">
+         Bootstrap
+      </div>
+      <div class="skill-bar" data-bar="75"><span></span></div>
+   </div>
+   <div class="skill">
+      <div class="skill-title">
+        JavaScript & Jquery
+      </div>
+      <div class="skill-bar" data-bar="60"><span></span></div>
+   </div>
+   <div class="skill">
+      <div class="skill-title">
+         Graphic Design
+      </div>
+      <div class="skill-bar" data-bar="50"><span></span></div>
+   </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="Testimonials" class="container-fluid">
+  <div class="xvv" style="background-color: #eee;"> 
+  <p class="sp">Testimonials</p>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="testimonial-bg">
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                        <p class="description">
+                        <i class="fas fa-quote-left"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        </p>
+                        <div class="pic">
+                             <img src="img/prof1.jpg">
+                        </div>
+                        <h3 class="title">Nazmul Hasan Ronee</h3><br>
+                        <span class="post"> Full Stack Web Developer</span>
+                    </div>
+ 
+                    <div class="testimonial">
+                        <p class="description"><i class="fas fa-quote-left"></i> 
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        </p>
+                        <div class="pic">
+                                         <img src="img/sl.jpg">
+                        </div>
+                        <h3 class="title">Salman Dewan</h3><br>
+                        <span class="post">Front End Developer</span>
+                    </div>
+
+                     <div class="testimonial">
+                        <p class="description"><i class="fas fa-quote-left"></i> 
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        </p>
+                        <div class="pic">
+                                         <img src="img/i.jpg">
+                        </div>
+                        <h3 class="title">Imran Mahmud</h3><br>
+                        <span class="post">Front End Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="blog" class="container-fluid">
+   <p class="sp">Our Blog</p>
+   <div class="row">
+  <div class="col-sm-4">
+    <div class="fx" style="margin: 0 0 12px;">
+    <img src="img/h4.jpg" width="100%">
+     <div class="times">
+     15 <span>Dec</span>
+    </div>
+    <div class="blog">
+     <p>Lorem ipsum dolor sit amet, consectetur urna facilisis adipiscing elit. Aliquam id magna at urna facilisis sollicitudin.</p>
+     <button type="button" class="btn btn-primary btn-lg">Read More <i class="fas fa-long-arrow-alt-right"></i></button>
+    </div>
+    </div> 
+  </div>
+ <div class="col-sm-4">
+   <div class="fx" style="margin: 0 0 12px;">
+    <img src="img/h4.jpg" width="100%">
+    <div class="times">
+    15 <span>Dec</span>
+    </div>
+    <div class="blog">
+     <p class="cr">Lorem ipsum dolor sit amet, consectetur urna facilisis adipiscing elit. Aliquam id magna at urna facilisis sollicitudin.</p>
+    <button type="button" class="btn btn-primary btn-lg">Read More <i class="fas fa-long-arrow-alt-right"></i></i></button>
+</div>
+    </div>
+  </div>
+ <div class="col-sm-4">
+   <div class="fx" style="margin: 0 0 12px;">
+  <img src="img/h4.jpg" width="100%">
+   <div class="times">
+     15 <span>Dec</span>
+    </div>
+    <div class="blog">
+    <p class="cr">Lorem ipsum dolor sit amet, consectetur urna facilisis adipiscing elit. Aliquam id magna at urna facilisis sollicitudin.</p>
+    <button type="button" class="btn btn-primary btn-lg">Read More <i class="fas fa-long-arrow-alt-right"></i></button>
+    </div>
+   </div>
+ </div>
+</div> 
+</div>
+<div class="container-fluid">
+  <div class="vb">
+   <div class="row">
+     <div class="col-sm-12">
+      <div class="cx" style="text-align: center; padding-top: 20px">
+    <h5 class="ad" style="font-size: 25px; color:white;">I Am Available For Freelancer Project.</h5>
+    <p class="da" style="font-size: 25px; color:white;">Hire the best freelance Web Designers  the world's top freelancing website I'm a young dedicated designer from Bangladesh</p>
+    <button type="button" class="btn btn-primary btn-lg"><a href="https://drive.google.com/open?id=1GRuRWnqNb9S9AtlZMEbaq1Ok1S21k04067P6iHs6RFU">contact Me  <i class="fas fa-long-arrow-alt-right"></i></a> </button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div id="contact" class="container-fluid">
+  <p class="sp">CONTACT US</p>
+  <div class="nnn" style="text-align: center;"> 
+  <div class="row">
+  <div class="col-sm-4">
+  <div class="mm" style="position: relative;
+padding-left: 20px;">
+      <i class="fas fa-map-marked-alt" style="color: red;"></i>
+      <h6 class="cc">Address</h6>
+      <p class="pp">1900 Tangail Old Bus Stand ICT</p>
+
+    </div>
+    </div>
+  <div class="col-sm-4">
+  <div class="mm" style="position: relative;
+padding-left: px;">
+    <i class="fas fa-phone" style="color: #179904"></i>
+    <h6 class="cc">Call Us</h6>
+    <p class="pp">01784697461</p>
+    </div>
+  </div>
+    <div class="col-sm-4">
+    <div class="mm" style="position: relative;
+padding-left: px;">
+      <i class="fas fa-envelope" style="color: #FFF"></i>
+      <h6 class="cc">Email </h6>
+      <p class="pp">nh.toitoti@gmail.com</p>
+     </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-6">
+  <img src="img/zz.png" width="30%">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean eum sociis natoque penatibus magnis dis parturient mont es, nascetur ridiculus mus. Donec quam felis.</p>
+<div class="media">
+ <div class="social-l">
+  <a href=""><i class="fab fa-linkedin-in" style="color:#4064AD"></i> </a>
+  <a href=""><i class="fab fa-facebook-f" style="color: #4064AD"></i></a>
+  <a href=""><i class="fab fa-twitter" style="color: #1C9CEB"></i></a>
+  <a href=""><i class="fab fa-instagram" style="color: #B23576"></i></a>
+  </div>
+</div>
+</div>
+<div class="col-sm-6">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2162.998838702913!2d89.91925978367752!3d24.251712002861932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdfb4187c9b86b%3A0xc7fd6463b92643be!2sRn-Soft!5e0!3m2!1sen!2sbd!4v1576155863796!5m2!1sen!2sbd" width="100%" height="250px;" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+  <div class="Fm">
+  <div class="row">
+      <div class="col-sm-3 col-md-3 col-lg-3">
+      <h5 class="l">Web Design</h5>
+      <P class="life">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean eum sociis natoque penatibus magnis dis parturient mont es, nascetur ridiculus mus.
+     Donec quam felis.
+     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean eum sociis natoque penatibus magnis dis parturient mont es, nascetur ridiculus mus. Donec quam felis.</P>
+    </div>
+ <div class="col-sm-3 col-md-3 col-lg-3">
+      <h5 class="l">Useful Links</h5>
+      <div class="usl">
+      <li><a href="#index"><i class="fas fa-check"></i> HOME</a></li>   
+      <li><a href="#services"><i class="fas fa-check"></i> SERVICES</a></li>
+      <li><a href="#portfolio"><i class="fas fa-check"></i> PORTFOLIO</a></li>
+      <li><a href="#Team"><i class="fas fa-check"></i> TEAM</a></li>
+      <li><a href="#Testimonials"><i class="fas fa-check"></i> Testimonials</a></li>
+      <li><a href="#blog"><i class="fas fa-check"></i> BLOG</a></li>
+      <li><a href="#about"><i class="fas fa-check"></i> ABOUT</a></li>
+      <li><a href="#contact"><i class="fas fa-check"></i> CONTACT</a></li>
+      </div> 
+  </div>
+    <div class="col-sm-3 col-md-3 col-lg-3">
+     <h5 class="l">Contact Us</h5>
+     <p class="v"><strong>ICT</strong></p>
+     <p class="v"><strong>Tangail Old Bus Stand 1900 </strong></p>
+     <p class="v"><strong><i class="fas fa-globe" style="color: #5579cc"></i></strong> rn-soft.ml/?i=1</p>
+     <p class="v"><strong><i class="fas fa-globe" style="color: #5579cc"></i></strong> https://ictbdesh.com/</p>
+     <p class="v"><strong>Phone:</strong> 01784697461</p>
+     <p class="v"><strong>Email:</strong> jqueryimran@gmail.com</p>
+      <div class="social-l">
+        <a href=""><i class="fab fa-linkedin-in" style="color:#4064AD"></i> </a>
+        <a href=""><i class="fab fa-facebook-f" style="color: #4064AD"></i></a>
+        <a href=""><i class="fab fa-twitter" style="color: #1C9CEB"></i></a>
+        <a href=""><i class="fab fa-instagram" style="color: #B23576"></i></a>
+        </div>
+
+  </div>
+  <div class="col-sm-3 col-md-3 col-lg-3">
+   <h5 class="l">Our Newsletter</h5>
+   <P class="life">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean eum sociis natoque penatibus magnis dis parturient mont es, nascetur ridiculus mus. Donec quam felis.</P>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+  <label class="form-check-label" for="defaultCheck2">Disabled checkbox</label>
+</div>
+<form action="" method="post">
+  <input type="email" name="email"  placeholder="Enter email"><input type="submit" value="Subscribe">
+  </form>
+</div>
+</div>
+</div>
+<div class="footer">
+  
+<p>
+© Copyright 2019 All Rights Reserved Designed by Imran Mahmud</p>
+
+</div>
+</div>
+</div>
+
+<script src="js/loader.js"></script>
+<script src="js/fakeloader.min.js"></script>
+<script src="js/smoth-script.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script  src="js/script-skill.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+<script  src="js/script.js"></script>
+  
+</body>
+</html>
